@@ -1,0 +1,12 @@
+{
+    "name": "imjosephe/buscador-cursos",
+    "description": "Projeto que busca os cursos disponíveis no site da Alura",
+    "type": "library",
+    "authors": [
+        {
+            "name": "José Augusto",
+            "email": "josedesignerbr@hotmail.com"
+        }
+    ],
+    "require": {}
+}
