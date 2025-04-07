@@ -5,7 +5,7 @@ $pdo = new PDO('sqlite:' . $caminhoBanco);
 
 echo 'Conectei';
 
-$pdo->exec("INSERT INTO phones (area_code, number, student_id) VALUES ('24', '999999999', 1),('21', '222222222', 1);");
+$pdo->exec("INSERT INTO phones (area_code, number, student_id) VALUES ('24', '999999999', 1), ('21', '22222222', 1);");
 exit();
 
 $createTableSql = '
@@ -23,5 +23,4 @@ $createTableSql = '
         FOREIGN KEY(student_id) REFERENCES students(id)
     );
 ';
-
 $pdo->exec($createTableSql);
