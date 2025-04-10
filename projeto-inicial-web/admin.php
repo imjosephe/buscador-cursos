@@ -36,6 +36,13 @@
   <section class="container-table">
     <table>
       <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Tipo</th>
+          <th>Descrição</th>
+          <th>Valor</th>
+          <th colspan="2">Ações</th>
+        </tr>
         <?php foreach ($produtos as $produto): ?>
           <tr>
             <td><?= $produto->getNome() ?></td>
@@ -43,7 +50,7 @@
             <td><?= $produto->getDescricao() ?></td>
             <td><?= $produto->getPrecoFormatado() ?></td>
             <td>
-              <a class="botao-editar" href="editar-produto.html">Editar</a>
+              <a class="botao-editar" href="editar-produto.php?id=<?= $produto->getId(); ?>">Editar</a>
             </td>
             <td>
               <form action="excluir-produto.php" method="post">
@@ -56,7 +63,7 @@
       </tbody>
     </table>
   <a class="botao-cadastrar" href="cadastrar-produto.php">Cadastrar produto</a>
-  <form method="post">
+  <form action="gerador-pdf.php" method="post">
     <input type="submit" class="botao-cadastrar" value="Baixar Relatório"/>
   </form>
   </section>
