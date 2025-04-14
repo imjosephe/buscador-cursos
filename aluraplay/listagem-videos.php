@@ -6,7 +6,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-    <?php require_once 'inicio-html.php'; ?>
+    <?php require_once 'views/inicio-html.php'; ?>
     <ul class="videos__container" alt="videos alura">
     <?php foreach ($videoList as $video): ?>
         <li class="videos__item">
@@ -24,4 +24,4 @@
         </li>
         <?php endforeach; ?>
     </ul>
-<?php require_once 'fim-html.php'; ?>
+<?php require_once 'views/fim-html.php'; ?>
