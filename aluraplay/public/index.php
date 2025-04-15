@@ -15,8 +15,7 @@ use Alura\Mvc\Repository\VideoRepository;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$dbPath = __DIR__ . '/../banco.sqlite';
-$pdo = new PDO("sqlite:$dbPath");
+$pdo = new PDO('mysql:host=localhost;dbname=serenatto', 'root', 'Senhadificil123$');
 $videoRepository = new VideoRepository($pdo);
 
 $routes = require_once __DIR__ . '/../config/routes.php';
