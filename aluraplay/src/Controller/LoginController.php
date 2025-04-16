@@ -11,7 +11,7 @@ class LoginController implements Controller
     public function __construct()
     {
         $dbPath = __DIR__ . '/../../banco.sqlite';
-        $this->pdo = new \PDO("sqlite:$dbPath");
+        $this->pdo = new \PDO('mysql:host=localhost;dbname=serenatto', 'root', 'Senhadificil123$');
     }
 
     public function processaRequisicao(): void
