@@ -24,11 +24,6 @@
     font-size: 21px;
 }
 
-.formulario__titulo.erro {
-    color: red;
-    margin-top: 1rem;
-}
-
 .campo__escrita {
     width: 50vw;
     border-radius: 24px;
